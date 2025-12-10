@@ -1,0 +1,142 @@
+/* Cardiff Met IST4000 PORT2 – styles for 12-14 y/o audience */
+:root{
+  --primary:#4ecdc4;
+  --secondary:#ff6b6b;
+  --accent:#ffe66d;
+  --dark:#333;
+  --light:#fafafa;
+  --maxw:900px;
+}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:'Poppins',sans-serif;
+  line-height:1.6;
+  color:var(--dark);
+  background:var(--light);
+}
+header{
+  background:var(--primary);
+  color:white;
+  padding:2rem 1rem;
+  text-align:center;
+}
+.tagline{
+  font-weight:300;
+  font-size:1.1rem;
+  margin-top:.5rem;
+}
+nav{
+  background:white;
+  position:sticky;
+  top:0;
+  z-index:10;
+  border-bottom:2px solid var(--accent);
+}
+nav ul{
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:1rem;
+  padding:.5rem 1rem;
+}
+nav a{
+  text-decoration:none;
+  color:var(--dark);
+  font-weight:600;
+  padding:.25rem .5rem;
+  border-radius:4px;
+  transition:.2s;
+}
+nav a:hover{
+  background:var(--accent);
+}
+main{
+  max-width:var(--maxw);
+  margin:auto;
+  padding:1rem;
+}
+section{
+  margin:2rem 0;
+}
+h2{
+  margin-bottom:1rem;
+  color:var(--secondary);
+}
+.cards{
+  display:flex;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+.card{
+  flex:1 1 250px;
+  background:white;
+  border:1px solid #ddd;
+  border-radius:8px;
+  padding:1rem;
+  text-align:center;
+  box-shadow:0 2px 4px rgba(0,0,0,.05);
+}
+.card svg{
+  width:80px;
+  height:80px;
+  margin:auto;
+}
+.benefit-list, .risk-list, #design ol, #ethics ul, #future ul{
+  padding-left:1.2rem;
+}
+#quiz-box{
+  background:white;
+  border:2px solid var(--accent);
+  border-radius:8px;
+  padding:1rem;
+}
+.question{
+  display:none;
+}
+.question.active{
+  display:block;
+}
+label{
+  display:block;
+  margin:.5rem 0;
+  cursor:pointer;
+}
+button.check-btn{
+  margin-top:.75rem;
+  padding:.5rem 1rem;
+  background:var(--secondary);
+  color:white;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+}
+button.check-btn:hover{
+  background:#ff5252;
+}
+.feedback{
+  margin-top:.5rem;
+  font-weight:600;
+}
+.correct{
+  color:green;
+}
+.incorrect{
+  color:var(--secondary);
+}
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin:1rem auto;
+}
+#page-footer{
+  text-align:center;
+  padding:1rem;
+  font-size:.9rem;
+  color:#666;
+}

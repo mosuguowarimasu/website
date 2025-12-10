@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AI – Friend, Foe or In-Between?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🤖 AI – Friend, Foe or In-Between?</h1>
+    <p class="tagline">An interactive mini-course for curious minds (age 12-14)</p>
+  </header>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#what">What is AI?</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#risks">Risks</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- intro -->
+    <section id="intro">
+      <h2>Why are we here?</h2>
+      <p>AI is in your phone, your games, your social feeds – but most people never get taught what it actually is.  
+         This educational experience will be a fun, five-minute tour that will allow you to decide for yourself:  
+         <strong>Is AI a friend, a foe, or something in-between?</strong></p>
+    </section>
+
+    <!-- was ist das -->
+    <section id="what">
+      <h2>What is AI, really?</h2>
+      <div class="cards">
+        <div class="card">
+          <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="#ff6b6b"/><text x="50" y="55" text-anchor="middle" fill="white" font-size="40">🧠</text></svg>
+          <h3>Think</h3>
+          <p>AI is software that can <strong>learn patterns</strong> from examples (photos, text, sounds) and then make predictions.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="#4ecdc4"/><text x="50" y="55" text-anchor="middle" fill="white" font-size="40">⚡</text></svg>
+          <h3>Speed</h3>
+          <p>It can do millions of maths operations per second – that’s why it spots things humans miss.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="#ffe66d"/><text x="50" y="55" text-anchor="middle" fill="#333" font-size="40">🤝</text></svg>
+          <h3>Help</h3>
+          <p>It can suggest the next song, warn doctors about strange moles or help farmers save water.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- good -->
+    <section id="benefits">
+      <h2>Three big benefits</h2>
+      <ul class="benefit-list">
+        <li><strong>Easy automation:</strong> Makes certain tasks be done faster and more efficient [1] </li>
+        <li><strong>Ease of learning:</strong> It can make abstract concepts more understandable by generating an image on the subject [2] </li>
+        <li><strong>Power saving:</strong> AI powered thermostat can make the climate control more efficient, lowering the power use at least by 23% [3] </li>
+      </ul>
+    </section>
+
+    <!-- bad -->
+    <section id="risks">
+      <h2>Three big risks</h2>
+      <ul class="risk-list">
+        <li><strong>Data bias:</strong> Some of the data can be manipulated in order to make certain points/trends/patterns more expressed, making the outocme generated data not objective [1]</li>
+        <li><strong>Becoming too dependant:</strong> Overuse of AI in day-to-day tasks will lead to people not being as selfsufficient [2]</li>
+        <li><strong>Deepfakes:</strong> Ai is scarely accurate generation of a specific content type can lead to high doubts in any information online [4]</li>
+      </ul>
+    </section>
+
+    <!-- the what -->
+    <section id="quiz">
+      <h2>Quick-fire quiz</h2>
+      <p>Test what you just learned. Choose one answer, then click <strong>Check</strong>.</p>
+      <div id="quiz-box">
+        <div class="question active" data-answer="b">
+          <p><strong>1)</strong> Which sentence is TRUE?</p>
+          <label><input type="radio" name="q1" value="a"> AI is magic powered by tiny ghosts</label>
+          <label><input type="radio" name="q1" value="b"> AI learns patterns from data</label>
+          <label><input type="radio" name="q1" value="c"> AI can think exactly like a human</label>
+          <button class="check-btn">Check</button>
+          <p class="feedback"></p>
+        </div>
+        <div class="question" data-answer="c">
+          <p><strong>2)</strong> A risk of AI is…</p>
+          <label><input type="radio" name="q2" value="a"> It always tells jokes</label>
+          <label><input type="radio" name="q2" value="b"> It never makes mistakes</label>
+          <label><input type="radio" name="q2" value="c"> It can copy unfair patterns from data</label>
+          <button class="check-btn">Check</button>
+          <p class="feedback"></p>
+        </div>
+        <div class="question" data-answer="a">
+          <p><strong>3)</strong> AI can help the planet by…</p>
+          <label><input type="radio" name="q3" value="a"> Saving energy in homes</label>
+          <label><input type="radio" name="q3" value="b"> Causing power cuts</label>
+          <label><input type="radio" name="q3" value="c"> Making phones slower</label>
+          <button class="check-btn">Check</button>
+          <p class="feedback"></p>
+        </div>
+      </div>
+      <p id="score" style="margin-top:1rem;font-weight:600;"></p>
+    </section>
+    <section>
+	<h2><a href="refs.html">References</a></h2>
+    </section>
+
+  </main>
+
+  <footer id="page-footer">
+    <p>© 2025 Cardiff Met IST4000 PORT2 Group X</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
